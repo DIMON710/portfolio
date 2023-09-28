@@ -1,0 +1,106 @@
+// main: main.less
+
+.team {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+        flex-wrap: wrap;
+        gap: 100px 5px;
+        @media (max-width: 1120px) {
+        justify-content: space-around;
+        flex-grow: 1;
+        }
+        @media (max-width: 750px) {
+            margin-bottom: 50px;
+            }
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+        @media (max-width: 768px) {
+            cursor: default;
+            }
+        @media (max-width: 755px) {
+            flex-basis: 80%;
+            }
+        @media (max-width: 550px) {
+            flex-basis: 90%;
+            }   
+        img {
+            width: 100%;
+        }
+    }
+
+    &__cart {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -70px;
+        width: 300px;
+        height: 120px;
+        text-align: center;
+        color: #30383b;
+        background-color: #fff;
+
+        overflow: hidden;
+        transition: 0.3s all ease-in-out;
+
+        &.active {
+            height: 170px;
+            bottom: -70px;
+            box-shadow: 0px 15px 30px 0px rgba(48, 56, 59, 0.1);
+            cursor: default;
+        }
+
+        h2 {
+            color: #263a41;
+            font-family: 'Rufina Bold', sans-serif;
+            font-size: 22px;
+            line-height: 27px;
+            padding-top: 35px;
+        }
+
+        p {
+            color: #888;
+            font-family: 'Rufina Bold', sans-serif;
+            font-size: 15px;
+            line-height: 27px;
+            padding-bottom: 23px;
+        }
+    }
+
+    &__mess-gr {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all ease-in-out;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__mess {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #30383b;
+        background-color: transparent;
+        color: #30383b;
+        border-radius: 50%;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            background-color: #ff817e;
+            border-color: #ff817e;
+            color: #fff;
+        }
+    }
+}

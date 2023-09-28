@@ -1,0 +1,22 @@
+// main: main.less
+.btn-roc {
+    background: #ccc url(../../rockpaperscissors/assets/img/scissors.png) no-repeat center center;
+    background-size: 250px;
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+    &::after {
+        content: 'Камень Ножницы Бумага';
+        color: #fff;
+    }
+
+    &::before {
+        background-color: rgba(56, 56, 56, 0.753);
+    }
+}
+.bg-roc {
+    border-radius: 17px;
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+}

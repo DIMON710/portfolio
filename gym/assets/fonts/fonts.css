@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Museo 300';
+    src: local('Museo 300'), local('Museo-300'),
+        url('Museo-300.woff2') format('woff2'),
+        url('Museo-300.woff') format('woff'),
+        url('Museo-300.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Museo 700';
+    src: local('Museo 700'), local('Museo-700'),
+        url('Museo-700.woff2') format('woff2'),
+        url('Museo-700.woff') format('woff'),
+        url('Museo-700.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Times_new_roman Regular';
+    src: url('times_new_roman_obychnyj-webfont.woff2') format('woff2'),
+         url('times_new_roman_obychnyj-webfont.woff') format('woff'),
+         url('times_new_roman_obychnyj-webfont.svg#times_new_romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

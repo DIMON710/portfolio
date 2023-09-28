@@ -1,0 +1,192 @@
+// main: main.less
+
+.nav {
+    &__body {
+        padding: 0 6.1%;
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.burger-btn {
+    position: relative;
+    &__body {
+        width: 24px;
+        height: 20px;
+        span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            display: block;
+            width: 24px;
+            height: 3px;
+            background-color: #356EAD;
+            transition: 0.1s all ease-in-out;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 0;
+            display: block;
+            width: 24px;
+            height: 3px;
+            background-color: #356EAD;
+            transition: 0.3s all ease-in-out;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            display: block;
+            width: 24px;
+            height: 3px;
+            background-color: #356EAD;
+            transition: 0.3s all ease-in-out;
+        }
+    }
+    &__body.active {
+        height: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all ease-in-out;
+        span {
+            opacity: 0;
+            visibility: hidden;
+        }
+        &::before {
+            top: 9px;
+            left: 0;
+            transform: rotate(45deg);
+        }
+        &::after {
+            top: 9px;
+            left: 0;
+            transform: rotate(-45deg)
+        }
+    }
+}
+
+.burger-menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: rgba(90, 153, 208, 0.8);
+    width: 250px;
+    height: 440px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.3s all ease-in-out;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    @media (max-width: 350px) {
+        width: 100%;
+        right: 0;
+        top: -100%;
+    }
+    &__body ul {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        li a {
+            font-family: 'Gilroy Medium';
+            font-size: 30px;
+            color: #1F3F68;
+        }
+    }
+}
+
+.burger-menu.active {
+    right: 0;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.header {
+    height: 768px;
+    position: relative;
+    overflow: hidden;
+
+    &__background {
+        position: absolute;
+        width: 100%;
+        height: 768px;
+        left: 0px;
+        top: 0px;
+        background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+        opacity: 0.2;
+        border: 1px solid #000000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    &__body {
+        padding-top: 110px;
+
+        @media (max-width: 425px) {
+            padding-top: 60px;
+        }
+
+        span {
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Gilroy Medium';
+            font-size: 64px;
+            line-height: 74px;
+            color: #1F3F68;
+            padding-bottom: 35px;
+
+            @media (max-width: 425px) {
+                font-size: 50px;
+            }
+
+        }
+
+        p {
+            font-family: 'Gilroy Regular';
+            max-width: 420px;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.9px;
+            color: rgba(31, 63, 104, 0.6);
+            padding-bottom: 75px;
+
+            @media (max-width: 520px) {
+                padding-bottom: 50px;
+            }
+        }
+
+        a {
+            font-family: 'Gilroy Regular';
+            font-size: 16px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 42px;
+        right: 25px;
+        z-index: -1;
+        user-select: none;
+        @media (max-width: 1280px) {
+            right: -234px;
+        }
+
+        @media (max-width: 950px) {
+            right: -434px;
+        }
+
+        @media (max-width: 780px) {
+            right: -534px;
+        }
+    }
+}

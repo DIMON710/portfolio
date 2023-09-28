@@ -1,0 +1,26 @@
+// main: main.less
+._btn-an {
+    flex-basis: 300px;
+    display: block;
+    background: url(../../animal/assets/img/bg-header.jpg) no-repeat;
+    background-size: 700px;
+    background-position: -320px center;
+    @media (max-width: 734px) {
+        background-position: right;
+    }
+    @media (max-width: 475px) {
+        background-position: -300px center;
+    }
+    &::after {
+        content: 'Animal';
+    }
+
+    &::before {
+        background-color: #d4b096;
+    }
+}
+
+.bg-an {
+    display: block;
+    flex-basis: 300px;
+}

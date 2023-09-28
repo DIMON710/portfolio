@@ -1,0 +1,77 @@
+// main: main.less
+
+.comments {
+    background-color: #fff9f8;
+    margin-bottom: 145px;
+    @media (max-width: 1024px) {
+        margin-bottom: 0;
+    }
+    &__item {
+        text-align: center;
+
+        img:first-child {
+            width: 59px;
+            height: 51px;
+            margin: 0 auto;
+            margin-top: 137px;
+        }
+
+        p {
+            color: #263a41;
+            font-family: 'Rufina Regular', sans-serif;
+            font-size: 18px;
+            line-height: 35px;
+            max-width: 970px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+
+        img:last-of-type {
+            width: 76px;
+            height: 76px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #263a41;
+            font-family: 'Roboto Light', sans-serif;
+            font-size: 15px;
+            line-height: 35px;
+
+            span {
+                font-family: 'Roboto Regular', sans-serif;
+                font-size: 22px;
+            }
+
+            margin-top: 22px;
+        }
+    }
+}
+
+.owl-carousel#comments-carousel .owl-dots button.owl-dot {
+    width: 11px;
+    height: 11px;
+    margin-right: 15px;
+    border: 1px solid #fff;
+    background-color: #ffc3c2;
+    border-radius: 50%;
+    margin-top: 45px;
+    margin-bottom: 135px;
+    transition: 0.5s all ease-in-out;
+}
+
+.owl-carousel#comments-carousel .owl-dots button.owl-dot:last-child {
+    margin-right: 0px;
+}
+
+.owl-carousel#comments-carousel .owl-dots {
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+}
+
+.owl-carousel#comments-carousel .owl-dots button.owl-dot:hover,
+.owl-carousel#comments-carousel .owl-dots button.owl-dot.active {
+    background-color: #ff817e;
+    border-color: #ff817e;
+    transition: 0.5s all ease-in-out;
+}

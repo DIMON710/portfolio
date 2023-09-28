@@ -1,0 +1,22 @@
+// main: main.less
+.btn-hom {
+    background: url(../img/dog.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 0;
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+    &::after {
+        content: "Homerun";
+        color: #fff;
+    }
+
+    &::before {
+        background-color: #040274a2;
+    }
+}
+.bg-hom {
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+}

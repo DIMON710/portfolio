@@ -1,0 +1,35 @@
+// main: main.less
+._btn-gim {
+    background: url(../img/bg-gim.png) no-repeat;
+    background-size: 1000px;
+    background-position: right top;
+    flex-basis: 625px;
+    border-top-right-radius: 10px;
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+    @media (max-width: 600px) {
+        background-size: 900px;
+        background-position: right top;
+    }
+    @media (max-width: 540px) {
+        background-size: 900px;
+        background-position: -470px top;
+    }
+    &::after {
+        content: 'Gim';
+        color: #fff;
+    }
+
+    &::before {
+        background-color: #222;
+    }
+}
+
+.bg-gim {
+    flex-basis: 625px;
+    border-radius: 10px;
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+}

@@ -1,0 +1,49 @@
+.start {
+    &__body {
+        background-color: #181818;
+        border-radius: 20px;
+        text-align: center;
+        color: #fff;
+        overflow: hidden;
+        @include adaptiv("padding-top", 70, 30, 1);
+        padding-bottom: 20px;
+        h2 {
+            padding: 15px 15px 25px;
+            font-weight: bold;
+            @include adaptiv('font-size', 58, 35, 1);
+            @include adaptiv('line-height', 64, 43, 1);
+            span {
+                display: block;
+            }
+        }
+        p {
+            color: #f4f3f3;
+            @include adaptiv('font-size', 22, 18, 1);
+            @include adaptiv('line-height', 30, 26, 1);
+            padding: 0 15px;
+            @include adaptiv("padding-bottom", 70, 30, 1);
+            span {
+                display: block;
+            }
+        }
+        a {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 212px;
+            height: 51px;
+            margin-bottom: 40px;
+        }
+        img {
+            padding-right: 200px;
+        }
+    }
+    &__logo {
+        font-size: 17px;
+        width: 63px;
+        height: 32px;
+        background-color: #f64775;
+        border-radius: 20px;
+        line-height: 32px;
+        margin: 0 auto;
+    }
+}

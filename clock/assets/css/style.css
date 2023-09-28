@@ -1,0 +1,201 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/* Обнуление */
+
+.page {
+    user-select: none;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.clock {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+
+    font-family: 'FuturaPT Extra-Bold';
+}
+
+.background {
+    position: absolute;
+    top: -110px;
+    left: -80px;
+    max-width: 1400px;
+    max-height: 1150px;
+}
+
+.dots {
+    position: absolute;
+    top: 330px;
+    left: 300px;
+    width: 300px;
+    animation: rotate linear infinite 100s;
+}
+
+@media (max-width: 1430px) {
+    .clock {
+        width: 100%;
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(1.2);
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+    }
+    75%{
+        transform: rotate(270deg) scale(1.2);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+#month {
+    position: absolute;
+    top: 480px;
+    left: 525px;
+    color: #fff;
+    font-family: 'FuturaPT Medium'; 
+    font-size: 30px;
+}
+
+#day {
+    position: absolute;
+    top: 450px;
+    left: 520px;
+    color: #00ff55;
+    font-family: 'FuturaPT Medium'; 
+    font-size: 30px;
+}
+
+#date {
+    position: absolute;
+    top: 480px;
+    left: 600px;
+    color: #fff;
+    font-family: 'FuturaPT Medium'; 
+    font-size: 30px;
+}
+
+#hours {
+    position: absolute;
+    top: 370px;
+    left: 330px;
+    color: #fff;
+    font-size: 135px;
+}
+
+#minutes { 
+    position: absolute;
+    top: 450px;
+    left: 320px;
+    font-size: 135px;
+    color: #00ff55;
+}
+
+#seconds {
+    position: absolute;
+    top: 520px;
+    left: 510px;
+    color: #fff;
+    font-size: 55px;
+}
+
+@media (max-width: 768px) {
+    .page {
+        margin: 0;
+    }
+    .clock {
+        margin: 0;
+    }
+    .background {
+        left: -180px;
+    }
+    .dots {
+        left: 200px;
+    }
+    #month {
+        left: 425px;
+    }
+    
+    #day {
+        left: 420px;
+    }
+    
+    #date {
+        left: 475px;
+    }
+    
+    #hours {
+        left: 230px;
+    }
+    
+    #minutes { 
+        left: 220px;
+    }
+    
+    #seconds {
+        left: 410px;
+    }
+}
+
+@media (max-width: 620px) {
+    .clock {
+    transform: scale(0.5);
+    }
+    .background {
+        left: -380px;
+    }
+    .dots {
+        left: 0;
+    }
+    #month {
+        left: 225px;
+    }
+    
+    #day {
+        left: 220px;
+    }
+    
+    #date {
+        left: 275px;
+    }
+    
+    #hours {
+        left: 30px;
+    }
+    
+    #minutes { 
+        left: 20px;
+    }
+    
+    #seconds {
+        left: 210px;
+    }
+}
+
+/* 
+font-family: 'FuturaPT Extra-Bold';
+font-family: 'FuturaPT Medium'; 
+*/

@@ -1,0 +1,54 @@
+._btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 54px;
+    background-color: #0099ff;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+}
+.new {
+    width: 42px;
+    height: 23px;
+    background: #f64775;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    margin: 0 auto;
+}
+.arrow {
+    margin: 20px 8px;
+    width: 10px;
+    height: 10;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out;
+}
+.arrow path {
+    fill: #fff;
+}
+#contact {
+    svg path {
+        transition: 0.3s all ease-in-out;
+    }
+}
+.twitter.active {
+    path:first-child {
+        fill: #fff;
+    }
+    path:last-child {
+        fill: #0099ff;
+    }
+}
+.in.active {
+    path {
+        fill: #007BB6;
+    }
+    path:first-child {
+        fill: #fff;
+    }
+}

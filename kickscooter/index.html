@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.svg">
+    <title>SegWay</title>
+</head>
+
+<body>
+    <div class="load">
+        <div class="load__left">
+        </div>
+        <div class="load__right">
+        </div>
+        <div class="load__body">
+            <svg width="49" height="63" viewBox="0 0 49 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M41.2306 0C37.0536 0 33.6319 3.40305 33.6319 7.55723C33.6319 11.7114 37.0536 15.0378 41.2306 15.0378C45.4077 15.0378 48.7523 11.7114 48.7523 7.55723C48.7523 3.40305 45.4077 0 41.2306 0ZM10.142 16.7547C8.87807 16.7547 7.8608 17.7664 7.8608 19.0234C7.8608 20.2804 8.87807 21.2921 10.142 21.2921H34.9266C35.7743 21.2461 38.2405 21.4454 39.3502 22.871C40.5216 24.3886 39.9822 27.0405 39.3502 28.9873C39.3502 28.9873 32.1522 51.9349 31.6127 53.6518C30.4721 57.3154 26.8963 59.6148 23.4591 58.1125C20.623 56.8709 20.4381 54.1883 21.3937 51.5823C21.517 51.2604 21.6711 51.0305 21.8099 50.7546C21.8099 50.7546 27.9752 39.2118 29.3316 35.9927C30.3334 33.632 29.0387 32.0071 25.9406 32.0071H11.8528C10.589 32.0071 9.57168 33.0188 9.57168 34.2758C9.57168 35.5328 10.589 36.5445 11.8528 36.5445H15.8603C16.708 36.4985 19.2358 36.6058 20.2069 38.1234C22.0256 40.944 20.7772 41.8637 18.0644 51.2451C17.8949 51.7356 17.7407 52.2415 17.6483 52.7627C17.6483 52.7627 15.7832 59.3235 21.7174 62.0368C27.2045 64.5354 33.5702 61.8682 35.4661 55.9205C36.7916 51.7356 43.6814 30.3669 43.6814 30.3669C45.084 26.0134 44.8528 22.5337 42.9261 20.0658C40.2596 16.6627 35.4969 16.7394 34.7725 16.77H10.142V16.7547ZM2.28117 24.2506C1.01728 24.2506 0 25.2623 0 26.5193C0 27.7763 1.01728 28.8493 2.28117 28.8493H31.4278C32.6917 28.8493 33.7089 27.7763 33.7089 26.5193C33.7089 25.2623 32.6917 24.2506 31.4278 24.2506H2.28117Z"
+                    fill="var(--grey)" />
+            </svg>
+            <h2>Loading...</h2>
+        </div>
+    </div>
+    <div class="page hide">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__body">
+                    <ul class="navbar__menu">
+                        <li><a href="#reviews">REVIEWS</a></li>
+                        <li><a href="#payment">SHIPPING AND PAYMENT</a></li>
+                        <li><a href="#wholesale">WHOLESALE</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#contacts">CONTACTS</a></li>
+                    </ul>
+                    <div class="navbar__items">
+                        <a class="popup-with-zoom-anim btn-basket" href="#small-dialog">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_195_2551)">
+                                    <path
+                                        d="M8 23.6667C9.10457 23.6667 10 22.7713 10 21.6667C10 20.5621 9.10457 19.6667 8 19.6667C6.89543 19.6667 6 20.5621 6 21.6667C6 22.7713 6.89543 23.6667 8 23.6667Z"
+                                        stroke="white" stroke-width="1.59292" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M20 23.6667C21.1046 23.6667 22 22.7713 22 21.6667C22 20.5621 21.1046 19.6667 20 19.6667C18.8954 19.6667 18 20.5621 18 21.6667C18 22.7713 18.8954 23.6667 20 23.6667Z"
+                                        stroke="white" stroke-width="1.59292" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5.67 6.66669H23L21.32 15.0567C21.2286 15.5171 20.9781 15.9306 20.6125 16.225C20.2468 16.5193 19.7893 16.6757 19.32 16.6667H8.75C8.26168 16.6708 7.78873 16.4962 7.42031 16.1756C7.05189 15.8551 6.81347 15.4109 6.75 14.9267L5.23 3.40669C5.16697 2.92592 4.93142 2.48443 4.5672 2.16435C4.20298 1.84428 3.73488 1.66742 3.25 1.66669H1"
+                                        stroke="white" stroke-width="1.59292" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_195_2551">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.666687)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <div class="count"><span>0</span></div>
+                        </a>
+                        <a class="inst" href="https://www.instagram.com/" target="_blank">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2165 22.0004C11.1437 22.0004 11.0708 22.0004 10.9975 22C9.27303 22.0042 7.67966 21.9604 6.1301 21.8661C4.70944 21.7797 3.41266 21.2887 2.37973 20.4464C1.38306 19.6337 0.702438 18.5348 0.356842 17.1807C0.0560608 16.0017 0.0401154 14.8444 0.0248413 13.725C0.0137634 12.9219 0.00234985 11.9702 0 11.0024C0.00234985 10.0306 0.0137634 9.07886 0.0248413 8.27571C0.0401154 7.15651 0.0560608 5.99921 0.356842 4.82008C0.702438 3.4659 1.38306 2.367 2.37973 1.55429C3.41266 0.712036 4.70944 0.221084 6.13026 0.134643C7.67982 0.0404809 9.27353 -0.00349495 11.0017 0.00070122C12.7266 -0.00299141 14.3195 0.0404809 15.8691 0.134643C17.2897 0.221084 18.5865 0.712036 19.6194 1.55429C20.6163 2.367 21.2967 3.4659 21.6423 4.82008C21.9431 5.99904 21.959 7.15651 21.9743 8.27571C21.9854 9.07886 21.997 10.0306 21.9992 10.9984V11.0024C21.997 11.9702 21.9854 12.9219 21.9743 13.725C21.959 14.8442 21.9433 16.0015 21.6423 17.1807C21.2967 18.5348 20.6163 19.6337 19.6194 20.4464C18.5865 21.2887 17.2897 21.7797 15.8691 21.8661C14.3851 21.9564 12.8607 22.0004 11.2165 22.0004ZM10.9975 20.2813C12.6939 20.2853 14.2515 20.2425 15.7647 20.1505C16.8389 20.0852 17.7703 19.7366 18.5333 19.1144C19.2386 18.5392 19.7243 17.7456 19.9769 16.7557C20.2274 15.7743 20.2418 14.7205 20.2557 13.7015C20.2666 12.9038 20.2781 11.9588 20.2804 11.0004C20.2781 10.0418 20.2666 9.09699 20.2557 8.29921C20.2418 7.28021 20.2274 6.22647 19.9769 5.2449C19.7243 4.25494 19.2386 3.46136 18.5333 2.88615C17.7703 2.26411 16.8389 1.9155 15.7647 1.8502C14.2515 1.75806 12.6939 1.71559 11.0015 1.71928C9.30542 1.71526 7.74763 1.75806 6.2345 1.8502C5.16028 1.9155 4.2289 2.26411 3.46587 2.88615C2.76057 3.46136 2.27483 4.25494 2.02222 5.2449C1.77179 6.22647 1.75735 7.28005 1.74342 8.29921C1.73251 9.09766 1.7211 10.0431 1.71875 11.0024C1.7211 11.9574 1.73251 12.9031 1.74342 13.7015C1.75735 14.7205 1.77179 15.7743 2.02222 16.7557C2.27483 17.7456 2.76057 18.5392 3.46587 19.1144C4.2289 19.7365 5.16028 20.0851 6.2345 20.1504C7.74763 20.2425 9.30576 20.2855 10.9975 20.2813ZM10.9565 16.3715C7.99504 16.3715 5.58543 13.962 5.58543 11.0004C5.58543 8.03871 7.99504 5.62927 10.9565 5.62927C13.9182 5.62927 16.3276 8.03871 16.3276 11.0004C16.3276 13.962 13.9182 16.3715 10.9565 16.3715ZM10.9565 7.34802C8.9427 7.34802 7.30418 8.98654 7.30418 11.0004C7.30418 13.0142 8.9427 14.6527 10.9565 14.6527C12.9705 14.6527 14.6089 13.0142 14.6089 11.0004C14.6089 8.98654 12.9705 7.34802 10.9565 7.34802ZM16.9292 3.91052C16.2173 3.91052 15.6401 4.48758 15.6401 5.19959C15.6401 5.91159 16.2173 6.48865 16.9292 6.48865C17.6412 6.48865 18.2182 5.91159 18.2182 5.19959C18.2182 4.48758 17.6412 3.91052 16.9292 3.91052Z"
+                                    fill="var(--white)" />
+                            </svg>
+                        </a>
+                        <a href="tel:+18888888888">+1 (888) 888-88-88</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="small-dialog" class="basket zoom-anim-dialog mfp-hide">
+            <h2 class="_title basket-title">Корзина</h2>
+            <p class="_par basket-clear">Корзина пуста</p>
+        </div>
+        <div class="logo">
+            <div class="container">
+                <div class="logo__body">
+                    <a href="./"><img src="img/logo.svg" alt="Segway California"></a>
+                    <div class="logo__director">
+                        <img src="img/logo-avatar.png" alt="avatar">
+                        <div class="logo__sign">
+                            <h3>jOHN SMITH</h3>
+                            <a href="#">Ask a question to the director</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="models">
+            <div class="models__body">
+                <div class="models__items">
+                    <div class="models__item">
+                        <div><img src="img/model-1.png" alt="model-1"></div>
+                        <p>KS E22</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-2.png" alt="model-2"></div>
+                        <p>KS ES1l</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-3.png" alt="model-3"></div>
+                        <p>KS Air t15</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-4.png" alt="model-4"></div>
+                        <p>KS F30</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-5.png" alt="model-5"></div>
+                        <p>KS E45</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-6.png" alt="model-6"></div>
+                        <p>KS MAX</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-7.png" alt="model-7"></div>
+                        <p>KS MAX</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-8.png" alt="model-8"></div>
+                        <p>KS ES2</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-9.png" alt="model-9"></div>
+                        <p>KS ES 3</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-10.png" alt="model-10"></div>
+                        <p>EKS ZING E8</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-11.png" alt="model-11"></div>
+                        <p>EKS ZING E10</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-12.png" alt="model-12"></div>
+                        <p>EKS ZING E12</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-13.png" alt="model-13"></div>
+                        <p>KS ES 4</p>
+                    </div>
+                    <div class="models__item">
+                        <div><img src="img/model-14.png" alt="model-14"></div>
+                        <p>Accessories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stock">
+            <h2>Free 1 day shipping within California.</h2>
+        </div>
+        <header class="header repeat">
+            <div class="container">
+                <div class="repeat__body">
+                    <div class="repeat__title">
+                        <h4>In stock</h4>
+                        <h1>SEGWAY Ninebot Kickscooter MAX</h1>
+                        <div class="repeat__block block">
+                            <p>Add an extended warranty from <span>Extend</span></p>
+                            <div class="block__items">
+                                <div class="block__item">1 Year - <span>$</span><span>139</span></div>
+                                <div class="block__item">2 Year - <span>$</span><span>209</span></div>
+                                <div class="block__item">3 Year - <span>$</span><span>279</span></div>
+                            </div>
+                            <div class="block__row">
+                                <div class="block__price">
+                                    <del><span>$</span><span>1049.99</span></del>
+                                    <ins><span>$</span><span>949.99</span></ins>
+                                </div>
+                                <a href="#">Segway Protective Gear Set as a gift</a>
+                                <div><img src="img/block-image.png" alt="armor"></div>
+                            </div>
+                            <div class="block__btns">
+                                <a href="#" class=" _button">BUY IT Now</a>
+                                <a href="#" class=" _button">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <p>Payment Methods: <span style="color: var(--blue);">Starting at $55/mo with </span><img
+                                src="img/a.svg" alt="a"><span style="color:black;"> .</span> <span
+                                style="color: var(--green);">Prequalify now</span></p>
+                        <div class="repeat__pay">
+                            <img src="img/header-pay-1.svg" alt="">
+                            <img src="img/header-pay-2.svg" alt="">
+                            <img src="img/header-pay-3.svg" alt="">
+                            <img src="img/header-pay-4.svg" alt="">
+                            <img src="img/header-pay-5.svg" alt="">
+                            <img src="img/header-pay-6.svg" alt="">
+                            <img src="img/header-pay-7.svg" alt="">
+                            <img src="img/header-pay-8.svg" alt="">
+                            <img src="img/header-pay-9.svg" alt="">
+                            <img src="img/header-pay-10.svg" alt="">
+                            <img src="img/header-pay-11.svg" alt="">
+                            <img src="img/header-pay-12.svg" alt="">
+                            <img src="img/header-pay-13.svg" alt="">
+                            <img src="img/header-pay-14.svg" alt="">
+                            <img src="img/header-pay-15.svg" alt="">
+                            <img src="img/header-pay-16.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header__images owl-carousel">
+                        <div class="repeat__images__item"><img src="img/header-image.png" alt=""></div>
+                        <div class="repeat__images__item"><img src="img/header-image.png" alt=""></div>
+                        <div class="repeat__images__item"><img src="img/header-image.png" alt=""></div>
+                        <div class="repeat__images__item"><img src="img/header-image.png" alt=""></div>
+                        <div class="repeat__images__item"><img src="img/header-image.png" alt=""></div>
+                        <div class="repeat__images__item"><img src="img/header-image.png" alt=""></div>
+                        <div class="repeat__images__item"><img src="img/header-image.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="benefits">
+                <div class="container">
+                    <div class="benefits__body">
+                        <div class="benefits__items">
+                            <div class="benefits__item">
+                                <div>
+                                    <svg width="38" height="37" viewBox="0 0 38 37" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_259_6028)">
+                                            <path
+                                                d="M34.9249 27.0334C34.7802 26.6369 34.3445 26.4345 33.9527 26.5806L26.0803 29.5146C25.6877 29.6607 25.4873 30.1007 25.632 30.4965C25.7448 30.8054 26.0343 30.9965 26.3423 30.9965C26.4291 30.9965 26.5174 30.9815 26.6043 30.9493L34.4766 28.0154C34.8693 27.8692 35.0696 27.4292 34.9249 27.0334Z"
+                                                fill="#009EFF" />
+                                            <path
+                                                d="M24.8886 30.7739C24.7439 30.3773 24.3082 30.175 23.9164 30.3211L23.5831 30.4456C23.1912 30.5917 22.9901 31.0317 23.1348 31.4275C23.2477 31.7364 23.5371 31.9275 23.8451 31.9275C23.9319 31.9275 24.0203 31.9125 24.1071 31.8803L24.4403 31.7559C24.8322 31.6089 25.0333 31.1697 24.8886 30.7739Z"
+                                                fill="#009EFF" />
+                                            <path
+                                                d="M34.9249 23.9173C34.7802 23.5208 34.3445 23.3184 33.9527 23.4646L27.7316 25.7831C27.339 25.9292 27.1386 26.3692 27.2834 26.765C27.3962 27.0739 27.6856 27.265 27.9936 27.265C28.0805 27.265 28.1688 27.25 28.2556 27.2178L34.4774 24.8993C34.8693 24.7531 35.0697 24.3139 34.9249 23.9173Z"
+                                                fill="#009EFF" />
+                                            <path
+                                                d="M34.9249 20.835C34.7802 20.4384 34.3445 20.2361 33.9527 20.3822L27.7316 22.7007C27.339 22.8469 27.1386 23.2869 27.2834 23.6827C27.3962 23.9915 27.6856 24.1827 27.9936 24.1827C28.0805 24.1827 28.1688 24.1677 28.2556 24.1354L34.4774 21.8169C34.8693 21.6708 35.0697 21.2308 34.9249 20.835Z"
+                                                fill="#009EFF" />
+                                            <path
+                                                d="M37.505 6.84605L19.262 0.0472245C19.0928 -0.0157415 18.9072 -0.0157415 18.738 0.0472245L0.495039 6.84605V6.8468C0.435664 6.86929 0.377773 6.89852 0.324336 6.936C0.120977 7.07842 0 7.31305 0 7.56341V29.4366C0 29.7567 0.197422 30.043 0.495039 30.1539L18.738 36.9528C18.8234 36.9843 18.9117 37 19 37C19.0891 37 19.1781 36.9835 19.262 36.952V36.9528L37.505 30.1539C37.8026 30.043 38 29.7567 38 29.4366V7.56341C38 7.24259 37.8026 6.95699 37.505 6.84605ZM18.243 35.138L1.51406 28.9036V8.66007L4.9207 9.92988V19.1934C4.9207 19.5135 5.11812 19.7998 5.41574 19.9107L13.5909 22.9571C13.6763 22.9886 13.7646 23.0043 13.8529 23.0043C14.0058 23.0043 14.1572 22.9578 14.2856 22.8671C14.489 22.724 14.61 22.4901 14.61 22.2397V13.5407L18.2437 14.8944L18.243 35.138ZM13.0959 12.9762V21.1423L6.43477 18.6597V10.4936L13.0959 12.9762ZM7.86422 9.39092L13.8529 7.15938L19.8416 9.39092L13.8529 11.6225L7.86422 9.39092ZM19 13.5467L16.0312 12.4403L22.2901 10.1075C22.5877 9.9966 22.7852 9.71025 22.7852 9.39017C22.7852 9.0701 22.5877 8.78375 22.2901 8.67281L14.1149 5.62646C13.9457 5.56349 13.7602 5.56349 13.5909 5.62646L5.66883 8.57911L2.94352 7.56341L19 1.5794L35.0565 7.56266L19 13.5467ZM36.4859 28.9036L19.757 35.138V14.8944L36.4859 8.66007V28.9036Z"
+                                                fill="var(--grey-white)" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_259_6028">
+                                                <rect width="38" height="37" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <h4>Delivery within 1 business day</h4>
+                                <div class="benefits__block block" style="padding-top: 15px;
+                                padding-bottom: 12px;">
+                                    <div class="block__title">
+                                        <h2>WE ARE IN <span>LOS ANGELES, CA</span></h2>
+                                        <p>Free California 1 day shipping. <span>US Free Shipping 3-5 Days</span></p>
+                                    </div>
+                                    <div class="block__image"><img src="img/benefits-block-1.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="benefits__item">
+                                <div>
+                                    <svg width="25" height="35" viewBox="0 0 25 35" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_259_6017)">
+                                            <path
+                                                d="M24.3126 0H0.687406C0.307985 0 0 0.312402 0 0.697266V34.3027C0 34.6876 0.307985 35 0.687406 35H18.6516C18.8336 35 19.0088 34.9262 19.1375 34.7956L24.7985 29.0534C24.9272 28.9229 25 28.7451 25 28.5605V0.697266C25 0.312402 24.692 0 24.3126 0ZM19.3377 32.6211L19.335 29.2537L22.6547 29.2571L19.3377 32.6211ZM23.6252 27.8633L18.6476 27.8585H18.6469C18.4649 27.8585 18.2897 27.9323 18.161 28.0629C18.0323 28.1941 17.9595 28.3712 17.9595 28.5564L17.9642 33.6055H1.37481V1.39453H23.6252V27.8633Z"
+                                                fill="var(--grey-white)" />
+                                            <g>
+                                                <path
+                                                    d="M7.04264 25.1549C5.31402 25.1549 3.9082 26.5809 3.9082 28.3343C3.9082 30.0877 5.31469 31.5137 7.04264 31.5137C8.77126 31.5137 10.1771 30.0877 10.1771 28.3343C10.1777 26.5809 8.77126 25.1549 7.04264 25.1549ZM7.04264 30.1198C6.07218 30.1198 5.28234 29.3187 5.28234 28.3343C5.28234 27.3499 6.07151 26.5494 7.04264 26.5494C8.01377 26.5494 8.80294 27.3499 8.80294 28.3343C8.80294 29.3187 8.01309 30.1198 7.04264 30.1198Z"
+                                                    fill="#00A0FF" />
+                                                <path
+                                                    d="M20.4733 4.18292H14.4936C14.1141 4.18292 13.8062 4.49533 13.8062 4.88019C13.8062 5.26505 14.1141 5.57746 14.4936 5.57746H20.4733C20.8527 5.57746 21.1607 5.26505 21.1607 4.88019C21.1607 4.49533 20.8527 4.18292 20.4733 4.18292Z"
+                                                    fill="#00A0FF" />
+                                                <path
+                                                    d="M20.4731 7.18115H10.3002C9.92078 7.18115 9.61279 7.49355 9.61279 7.87842C9.61279 8.26328 9.92078 8.57568 10.3002 8.57568H20.4731C20.8525 8.57568 21.1605 8.26328 21.1605 7.87842C21.1605 7.49355 20.8525 7.18115 20.4731 7.18115Z"
+                                                    fill="#00A0FF" />
+                                            </g>
+                                            <path
+                                                d="M16.0052 27.7491H12.2245C11.8451 27.7491 11.5371 28.0615 11.5371 28.4464C11.5371 28.8312 11.8451 29.1436 12.2245 29.1436H16.0052C16.3847 29.1436 16.6927 28.8312 16.6927 28.4464C16.6927 28.0615 16.3853 27.7491 16.0052 27.7491Z"
+                                                fill="var(--grey-white)" />
+                                            <path
+                                                d="M6.79447 4.18292H4.80166C4.42224 4.18292 4.11426 4.49533 4.11426 4.88019C4.11426 5.26505 4.42224 5.57746 4.80166 5.57746H6.79514C7.17456 5.57746 7.48255 5.26505 7.48255 4.88019C7.48255 4.49533 7.17456 4.18292 6.79447 4.18292Z"
+                                                fill="var(--grey-white)" />
+
+                                            <path
+                                                d="M20.5078 12.6888H4.49258C4.11316 12.6888 3.80518 13.0012 3.80518 13.3861C3.80518 13.771 4.11316 14.0834 4.49258 14.0834H20.5078C20.8872 14.0834 21.1952 13.771 21.1952 13.3861C21.1952 13.0012 20.8872 12.6888 20.5078 12.6888Z"
+                                                fill="var(--grey-white)" />
+                                            <path
+                                                d="M20.5078 15.0596H4.49258C4.11316 15.0596 3.80518 15.372 3.80518 15.7568C3.80518 16.1417 4.11316 16.4541 4.49258 16.4541H20.5078C20.8872 16.4541 21.1952 16.1417 21.1952 15.7568C21.1952 15.372 20.8872 15.0596 20.5078 15.0596Z"
+                                                fill="var(--grey-white)" />
+                                            <path
+                                                d="M20.5078 17.6394H4.49258C4.11316 17.6394 3.80518 17.9518 3.80518 18.3367C3.80518 18.7215 4.11316 19.0339 4.49258 19.0339H20.5078C20.8872 19.0339 21.1952 18.7215 21.1952 18.3367C21.1952 17.9518 20.8872 17.6394 20.5078 17.6394Z"
+                                                fill="var(--grey-white)" />
+                                            <path
+                                                d="M20.5079 20.0102H20.1298C19.7504 20.0102 19.4424 20.3226 19.4424 20.7075C19.4424 21.0923 19.7504 21.4047 20.1298 21.4047H20.5079C20.8873 21.4047 21.1953 21.0923 21.1953 20.7075C21.1953 20.3219 20.8873 20.0102 20.5079 20.0102Z"
+                                                fill="var(--grey-white)" />
+                                            <path
+                                                d="M17.7238 20.0102H4.49258C4.11316 20.0102 3.80518 20.3226 3.80518 20.7075C3.80518 21.0923 4.11316 21.4047 4.49258 21.4047H17.7245C18.1039 21.4047 18.4119 21.0923 18.4119 20.7075C18.4112 20.3219 18.1032 20.0102 17.7238 20.0102Z"
+                                                fill="var(--grey-white)" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_259_6017">
+                                                <rect width="25" height="35" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <h4>Basic 1 year warranty</h4>
+                                <div class="benefits__block block">
+                                    <div class="block__title">
+                                        <h2>One year <span>manufacturer's warranty</span></h2>
+                                        <p>The basic warranty is 1 year.
+                                            <span>You can also extend the warranty up to 4 years.</span>
+                                        </p>
+                                    </div>
+                                    <div class="block__image"><img src="img/benefits-block-2.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="benefits__item">
+                                <div>
+                                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_259_6014)">
+                                            <path
+                                                d="M35.8429 3.36829L33.604 1.14467C32.1444 -0.304975 29.6843 -0.389526 28.1199 0.956782L24.1863 4.34387C24.1361 4.38723 24.0924 4.43854 24.0582 4.49491L20.228 10.8312L17.7686 11.6449C17.5605 11.7135 17.4041 11.8848 17.3531 12.0958C17.3022 12.3068 17.3662 12.5301 17.5212 12.684L24.2234 19.3397C24.3435 19.4589 24.5043 19.5233 24.6702 19.5233C24.7189 19.5233 24.767 19.5175 24.815 19.5066C25.0282 19.4568 25.1999 19.3007 25.269 19.094L26.0891 16.6507L32.5621 12.7686C32.6188 12.7346 32.6705 12.6913 32.7134 12.6414L36.043 8.80916C37.3928 7.25907 37.3026 4.81793 35.8429 3.36829ZM35.0884 7.99039L31.8242 11.7468L25.2377 15.6968C25.1089 15.7741 25.0122 15.8941 24.9649 16.0357L24.3944 17.7347L22.8838 16.2345L22.8831 16.2337L20.6493 14.0152L20.6486 14.0145L19.138 12.5142L20.8487 11.9477C20.992 11.9 21.1128 11.8039 21.1907 11.6752L25.0893 5.22623L28.9479 1.90491C30.0212 0.98063 31.7093 1.03772 32.7105 2.03209L34.9494 4.25571C35.9514 5.2508 36.0132 6.92592 35.0884 7.99039Z"
+                                                fill="#009EFF" />
+                                            <path
+                                                d="M34.0518 25.2149C32.1963 23.3729 29.4663 22.7319 26.9923 23.529L13.5639 10.1923C14.3657 7.73531 13.7211 5.02318 11.8663 3.18113C9.91192 1.24007 6.98611 0.632319 4.41176 1.63464C4.21311 1.71197 4.06759 1.88324 4.02393 2.09064C3.98027 2.29804 4.04503 2.51267 4.19565 2.66298L8.21508 6.65494L5.53449 9.3172L1.51506 5.32453C1.36444 5.17494 1.14761 5.11062 0.938778 5.15398C0.729948 5.19734 0.557499 5.34187 0.479643 5.53916C-0.528853 8.09519 0.0823565 11.001 2.03677 12.9428C3.89223 14.7848 6.6223 15.4258 9.09624 14.6295L14.1176 19.6165L7.86436 25.827L3.88714 28.0355C3.77654 28.0969 3.68704 28.1901 3.63028 28.3028L1.84322 31.8525C1.72171 32.0939 1.769 32.3858 1.96183 32.5766L4.19565 34.7952C4.31717 34.9159 4.4787 34.9787 4.64242 34.9787C4.73846 34.9787 4.83524 34.9571 4.92474 34.9123L8.49886 33.1374C8.61237 33.081 8.70623 32.9922 8.76808 32.8823L10.9917 28.9323L17.245 22.7225L22.5247 27.9661C21.7228 30.4231 22.3675 33.1345 24.223 34.9773C25.5516 36.2969 27.3299 37 29.141 37C29.9938 37 30.8538 36.8439 31.6775 36.5238C31.8762 36.4465 32.0217 36.2752 32.0654 36.0678C32.109 35.8604 32.0443 35.6457 31.8936 35.4954L27.8742 31.5035L30.5548 28.8412L34.5742 32.8332C34.7248 32.9828 34.9417 33.0471 35.1505 33.0037C35.3593 32.9604 35.5318 32.8158 35.6096 32.6185C36.6174 30.0618 36.0062 27.156 34.0518 25.2149ZM10.0363 28.1063C9.99487 28.1475 9.95994 28.193 9.93156 28.2436L7.76031 32.1011L4.76757 33.5876L3.1777 32.0086L4.67443 29.0363L8.55852 26.8799C8.60946 26.8517 8.65603 26.8171 8.69677 26.7759L15.0119 20.5039L16.3522 21.8351L10.0363 28.1063ZM34.7161 31.1992L31.0016 27.5101C30.7549 27.2651 30.3547 27.2651 30.108 27.5101L26.5339 31.0598C26.4153 31.1776 26.3491 31.3373 26.3491 31.5035C26.3491 31.6697 26.416 31.8294 26.5339 31.9472L30.2485 35.6364C28.4068 35.9999 26.475 35.4383 25.1165 34.0899C23.5171 32.5015 23.0173 30.1239 23.8424 28.0318C23.9341 27.7999 23.8788 27.5354 23.7012 27.359L9.70745 13.4609C9.58667 13.341 9.42513 13.2774 9.26069 13.2774C9.18356 13.2774 9.10497 13.2918 9.03003 13.3207C6.92426 14.1402 4.52963 13.6438 2.9303 12.0554C1.57182 10.7062 1.00645 8.7875 1.37317 6.95845L5.08773 10.6476C5.33439 10.8926 5.73459 10.8926 5.98126 10.6476L9.55538 7.09793C9.80204 6.85295 9.80204 6.45549 9.55538 6.21051L5.84082 2.52134C7.68246 2.15712 9.61432 2.71935 10.9728 4.06783C12.5721 5.65623 13.072 8.03377 12.2469 10.1259C12.1552 10.3578 12.2105 10.6223 12.388 10.7986L26.3818 24.6968C26.5594 24.8731 26.8257 24.928 27.0593 24.837C29.1657 24.0175 31.5596 24.5139 33.159 26.1023C34.5167 27.4515 35.0821 29.3702 34.7161 31.1992Z"
+                                                fill="var(--grey-white)" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_259_6014">
+                                                <rect width="37" height="37" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <h4>After Sales Support</h4>
+                                <div class="benefits__block block">
+                                    <div class="block__title">
+                                        <h2>After Sales
+                                            <span>Support</span>
+                                        </h2>
+                                        <p>If you have any difficulties with your kickscooter, our specialists will
+                                            contact you within 15 minutes</p>
+                                    </div>
+                                    <div class="block__image"><img src="img/benefits-block-3.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="benefits__item active">
+                                <div>
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 5H23.4818C27.0717 5 29.9818 7.91015 29.9818 11.5V11.5C29.9818 15.0899 27.0717 18 23.4818 18H9.5C5.91015 18 3 20.9101 3 24.5V24.5C3 28.0899 5.91015 31 9.5 31H31"
+                                            stroke="var(--grey-white)" />
+                                        <circle cx="4.5" cy="4.5" r="4" fill="var(--white)" stroke="#00A0FF" />
+                                        <circle cx="28.5" cy="31.5" r="4" fill="var(--white)" stroke="#00A0FF" />
+                                    </svg>
+                                </div>
+                                <h4>Up to 40 miles per charge</h4>
+                                <div class="benefits__block block " style="display: flex">
+                                    <div class="block__title">
+                                        <h2>Up to 40 miles of range on <span>a single charge</span></h2>
+                                        <p>With a range of up to 40 miles, the longest range on the market, and a
+                                            20˚uphill climbing
+                                            angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to
+                                            Palo Alto
+                                            on a single charge.</p>
+                                    </div>
+                                    <div class="block__image"><img src="img/benefits-block-4.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="packing">
+                <div class="container">
+                    <div class="packing__body">
+                        <div class="packing__title">
+                            <h2 class="_title">Packing List</h2>
+                            <div class="packing__video">
+                                <svg class="play" width="80" height="81" viewBox="0 0 80 81" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_125_594)">
+                                        <path
+                                            d="M60.7508 39.5658L31.4175 19.5658C31.0082 19.2885 30.4802 19.2578 30.0428 19.4885C29.6068 19.7191 29.3335 20.1725 29.3335 20.6671V60.6671C29.3335 61.1618 29.6068 61.6151 30.0442 61.8458C30.2388 61.9498 30.4535 62.0005 30.6668 62.0005C30.9295 62.0005 31.1922 61.9218 31.4175 61.7685L60.7508 41.7685C61.1148 41.5205 61.3335 41.1085 61.3335 40.6671C61.3335 40.2258 61.1148 39.8138 60.7508 39.5658ZM32.0002 58.1431V23.1911L57.6335 40.6671L32.0002 58.1431Z"
+                                            fill="var(--white)" />
+                                        <path
+                                            d="M40 0.667114C17.944 0.667114 0 18.6111 0 40.6671C0 62.7231 17.944 80.6671 40 80.6671C62.056 80.6671 80 62.7231 80 40.6671C80 18.6111 62.056 0.667114 40 0.667114ZM40 78.0004C19.4147 78.0004 2.66667 61.2524 2.66667 40.6671C2.66667 20.0818 19.4147 3.33378 40 3.33378C60.5853 3.33378 77.3333 20.0818 77.3333 40.6671C77.3333 61.2524 60.5853 78.0004 40 78.0004Z"
+                                            fill="var(--white)" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_125_594">
+                                            <rect width="80" height="80" fill="var(--white)"
+                                                transform="translate(0 0.667114)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="packing__image"><img src="img/packing-image.png" alt="packing"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="accessories" id="wholesale">
+                <div class="container">
+                    <div class="accessories__body">
+                        <h2 class="_title">Accessories</h2>
+                        <div class="accessories__items">
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-1.png" alt=""></div>
+                                <h3><span>NineboT</span>
+                                    Engine Speaker
+                                </h3>
+                                <p>The built-in engine sound simulation system can simulate the realistic engine roar
+                                    based on the vehicle's accelerator, brake, speed, and other signals</p>
+                                <h4><span>$</span><span>149.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-2.png" alt=""></div>
+                                <h3>Extension
+                                    <span>Rod</span>
+                                </h3>
+                                <p>The Extension Rod helps you to easily maneuver your scooter, so you no longer need to
+                                    bend over and push it, making it easier to take with you anywhere.</p>
+                                <h4><span>$</span><span>29.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-3.png" alt=""></div>
+                                <h3>Segway Protective
+                                    <span>Gear Set</span>
+                                </h3>
+                                <p>The curved, streamlined design of the helmet shell, coupled with the thick,
+                                    high-quality fabrics create a helmet that is stylish, protective and comfortable to
+                                    wear.</p>
+                                <h4><span>$</span><span>29.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-4.png" alt=""></div>
+                                <h3>Ninebot Leisure
+                                    <span>Backpack</span>
+                                </h3>
+                                <p>The Ninebot leisure backpack adopts a stylish gray-yellow color contrast, adding a
+                                    trendy accessory to your wardrobe.</p>
+                                <h4><span>$</span><span>69.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-5.png" alt=""></div>
+                                <h3>Segway External
+                                    <span>Battery</span>
+                                </h3>
+                                <p> It is easy to install and increases the range of the ES1, ES2 & E22 to 27.9, 28 and
+                                    27 miles respectively and It also increases the speed</p>
+                                <h4><span>$</span><span>249.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-6.png" alt=""></div>
+                                <h3>Segway
+                                    <span>Charger</span>
+                                </h3>
+                                <p>Whether at home, the office, or on your KickScooter journey, this Ninebot KickScooter
+                                    by Segway Charger is designed to provide a safe and stable charge anytime, anywhere.
+                                </p>
+                                <h4><span>$</span><span>79.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-7.png" alt=""></div>
+                                <h3><span>Segway</span>
+                                    Scooter Bag</h3>
+                                <p>Tough EVA material, suitable for the entire Ninebot KickScooter by Segway line. 3L
+                                    capacity gives you plenty of room to carry your phone, charger, bottled water, and
+                                    other personal items.</p>
+                                <h4><span>$</span><span>49.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-8.png" alt=""></div>
+                                <h3><span>Segway</span>
+                                    Phone Holder
+                                </h3>
+                                <p>The dual screw, non-slip design offers ultimate security and versatility. The phone
+                                    holder is applicable to multiple vehicle series.</p>
+                                <h4><span>$</span><span>29.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/accessories-9.png" alt=""></div>
+                                <h3><span>Segway</span>
+                                    bicycle seat
+                                </h3>
+                                <p>This scooter seat is designed to work with the MAX. It offers high quality, comfort
+                                    and safety that is in line with the MAX KickScooter.</p>
+                                <h4><span>$</span><span>119.99</span></h4>
+                                <a href="#" class="_button btn-cart">ADD TO CART</a>
+                            </div>
+                        </div>
+                        <a href="#" class="_button">SEE MORE</a>
+                    </div>
+                </div>
+            </section>
+            <section class="impress">
+                <div class="impress__image"><img src="img/impress-image.png" alt="image"></div>
+                <div class="container">
+                    <div class="impress__body">
+                        <h2 class="_title">IMPRESSIVE FEATURES</h2>
+                        <div class="impress__items">
+                            <div class="impress__item">
+                                <div><img src="img/impress-item-1.svg" alt="icon"></div>
+                                <h3>10”</h3>
+                                <p>Pneumatic Tires</p>
+                            </div>
+                            <div class="impress__item">
+                                <div><img src="img/impress-item-2.svg" alt="icon"></div>
+                                <h3>LED</h3>
+                                <p>Front LED Lights</p>
+                            </div>
+                            <div class="impress__item">
+                                <div><img src="img/impress-item-3.svg" alt="icon"></div>
+                                <h3>18.6 mph</h3>
+                                <p>Max Speed</p>
+                            </div>
+                            <div class="impress__item">
+                                <div><img src="img/impress-item-4.svg" alt="icon"></div>
+                                <h3>40.4 Miles</h3>
+                                <p>Max Range</p>
+                            </div>
+                            <div class="impress__item">
+                                <div><img src="img/impress-item-5.svg" alt="icon"></div>
+                                <h3>20%</h3>
+                                <p>Hill Grade</p>
+                            </div>
+                            <div class="impress__item">
+                                <div><img src="img/impress-item-6.svg" alt="icon"></div>
+                                <h3>IPX5</h3>
+                                <p>Water-Resistant</p>
+                            </div>
+                            <div class="impress__item">
+                                <div><img src="img/impress-item-7.svg" alt="icon"></div>
+                                <h3>6H</h3>
+                                <p>Fast Charging</p>
+                            </div>
+                            <div class="impress__item">
+                                <div><img src="img/impress-item-8.svg" alt="icon"></div>
+                                <h3>551Wh</h3>
+                                <p>Battery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="overview">
+                <div class="container">
+                    <div class="overview__body">
+                        <h2 class="_title"><span>KickScooter overview</span> SEGWAY Ninebot Kickscooter MAX </h2>
+                        <div><img src="img/overview-image.png" alt="Самокат"></div>
+                        <div class="overview__note left">
+                            <div id="electronic">
+                                <p>Electronic Throttle •</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="252" height="110" viewBox="0 0 252 110" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.5" d="M251 1H139L1 109" stroke="#009EFF"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="bell">
+                                <p>Bell • </p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="320" height="119" viewBox="0 0 320 119" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M318.5 1H250.5L106 117.5H1" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="brake">
+                                <p>Brake Lewer • </p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="207" height="131" viewBox="0 0 207 131" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M206 1L41.5 129.5H1" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="headlight">
+                                <p>Headlight •</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="298" height="161" viewBox="0 0 298 161" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M296.5 1.5L96 159.5H1" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="quick">
+                                <p>Quick Release Lever • </p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="180" height="19" viewBox="0 0 180 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M178.5 1L142.5 17.5H1" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="folding">
+                                <p>Folding Mechanism • </p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="211" height="30" viewBox="0 0 211 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M209.5 1.5L161 28.5621H1" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="front">
+                                <p>Front Fork • </p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="249" height="14" viewBox="0 0 249 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M248 13L194 1.5H1.5" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="drum">
+                                <p>Drum Brake • </p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="244" height="25" viewBox="0 0 244 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M242.5 23.5H189L161.5 1.5H1.5" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="overview__note right">
+                            <div id="dashboard">
+                                <p>• Dashboard & Power Button</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="332" height="60" viewBox="0 0 332 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M330.5 58.5H134L75 1.5H1" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="stem">
+                                <p>• Stem</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="528" height="28" viewBox="0 0 528 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M526.5 1.5H46L1 26.4997" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="battery">
+                                <p>• Battery Compartment</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="314" height="240" viewBox="0 0 314 240" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M312.5 1.5H228.5L1.5 239" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="port">
+                                <p>• Порт для зарядки</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="270" height="172" viewBox="0 0 270 172" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M268.5 1.5H170.5L1.5 171" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="charge">
+                                <p>• Charge Port</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="310" height="187" viewBox="0 0 310 187" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M308.5 1.5H186L1.5 186" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="kickstand">
+                                <p>• Kickstand</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="250" height="96" viewBox="0 0 250 96" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M248.5 1.5H145.5L109.5 1L1 94.5"
+                                        stroke="#323941" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="rear">
+                                <p>• Rear Fender</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="204" height="66" viewBox="0 0 204 66" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M1.5 65L81 1.5H202.5" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="light">
+                                <p>• Brake Light</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="181" height="50" viewBox="0 0 181 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M180 1.5H68.5L1.5 48.4999" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div id="hub">
+                                <p>• Hub Motor</p>
+                                <svg class="dot" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="13.5" cy="13" r="6" fill="white" stroke="#009EFF" stroke-width="2" />
+                                    <circle class="circle" opacity="0.1" cx="13.5" cy="13" r="13"
+                                        fill="url(#paint0_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.2" cx="13.5" cy="13" r="11"
+                                        fill="url(#paint1_radial_135_3661)" />
+                                    <circle class="circle" opacity="0.3" cx="13.5" cy="13" r="9"
+                                        fill="url(#paint2_radial_135_3661)" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(13)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(11)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                        <radialGradient id="paint2_radial_135_3661" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.5 13) rotate(90) scale(9)">
+                                            <stop offset="0.734375" stop-color="#009EFF" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#00A0FF" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <svg class="line" width="214" height="46" viewBox="0 0 214 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" opacity="0.1" d="M212.5 1.5L62 1.5L1.5 44.9998" stroke="#323941"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="landing" id="blog">
+                <div class="landing__item smart section">
+                    <div class="container">
+                        <div class="landing__item__body smart__body">
+                            <h2 class="_title">Smart battery
+                                Management system
+                                (Smart-BMS)</h2>
+                            <p class="_par">The Smart-BMS closely monitors the battery status with multiple protection
+                                mechanisms to ensure the battery durability</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing__item dual section">
+                    <div class="container flex">
+                        <div class="landing__item__body dual__body">
+                            <h2 class="_title">Dual Braking
+                                System</h2>
+                            <p class="_par">Simultaneous mechanical front drum brake and regenerative electric back
+                                brake provide both stability and steerability.</p>
+                            <p class="_par">*IPX5 water resistance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing__item built section">
+                    <div class="container">
+                        <div class="landing__item__body built__body">
+                            <h2 class="_title">Built-In Front
+                                <span>LED Light</span>
+                            </h2>
+                            <p class="_par">Front-facing lights are designed with 2.5w high-brightness LED light to
+                                illuminate the path ahead of you and increase your visibility to others around you. </p>
+                            <p class="_par">*Disclaimer: for your safety, please try not to ride at night</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing__item step section">
+                    <div class="container">
+                        <div class="landing__item__body step__body">
+                            <h2 class="_title">One-step Folding Mechanism</h2>
+                            <p class="_par">Ninebot KickScooter MAX can be easily folded and carried around in 3
+                                seconds.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing__item regen section">
+                    <div class="container">
+                        <div class="landing__item__body regen__body">
+                            <h2 class="_title">Regenerative Brake for Power Recycle
+                            </h2>
+                            <p class="_par">The innovative regenerative brake system turns Ninebot KickScooter MAX into
+                                an electric vehicle powered by electricity and recycled energy from riding. Energy will
+                                be collected from regenerative braking and distributed when you need a boost.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing__item easy section">
+                    <div class="container flex">
+                        <div class="landing__item__body easy__body">
+                            <h2 class="_title">Easy One Cord
+                                Fast Charging</h2>
+                            <p class="_par">The built-in charger lets riders recharge it easily when on the go without
+                                having to carry along a bulky charging adapter. 3A fast charge will give Ninebot
+                                KickScooter MAX a full charge in 6 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing__item riding section">
+                    <div class="container">
+                        <div class="landing__item__body riding__body">
+                            <h2 class="_title">3 Riding Modes</h2>
+                            <p class="_par">Eco, Standard, and Sports modes can be directly accessed by the intuitive
+                                LED dashboard, which also displays maintenance signals, power levels, Bluetooth
+                                connectivity and more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="manual">
+                <div class="container">
+                    <div class="manual__body">
+                        <div class="manual__image"><img src="img/manual-image.png" alt=""></div>
+                        <div class="manual__title">
+                            <h2 class="_title">DOWNLOAD
+                                manual</h2>
+                            <div class="manual__items">
+                                <div class="manual__item">
+                                    <div><img src="img/manual-item-1.svg" alt=""></div>
+                                    <p><span>Assembly and</span>
+                                        preparation for the trip</p>
+                                </div>
+                                <div class="manual__item">
+                                    <div><img src="img/manual-item-2.svg" alt=""></div>
+                                    <p><span>How to charge </span>
+                                        a scooter</p>
+                                </div>
+                                <div class="manual__item">
+                                    <div><img src="img/manual-item-3.svg" alt=""></div>
+                                    <p><span>How to ride </span>
+                                        properly</p>
+                                </div>
+                            </div>
+                            <a href="#" class="_button">Download manual <img src="img/manual-pdf.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="compare">
+                <div class="container">
+                    <div class="compare__body">
+                        <h2 class="_title">compare specifications</h2>
+                        <p class="_par">Add model to compare</p>
+                        <div class="compare__items owl-carousel">
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-1.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter E22</h3>
+                                <p>20 км/ч</p>
+                                <p>22 км</p>
+                                <p>5100 mAh</p>
+                                <p>13.5 кг</p>
+                                <p>25 кг - 100 кг</p>
+                                <p>3.5 часа</p>
+                                <p>1 встроенная</p>
+                                <p>Номинальная 300W</p>
+                                <p>71W (0.071kW)</p>
+                                <p>15%</p>
+                                <p>----</p>
+                                <p>Задний LED-фонарь</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-2.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter ES1l</h3>
+                                <p>20 км/ч</p>
+                                <p>20 км</p>
+                                <p>184 wAh</p>
+                                <p>10.3 кг</p>
+                                <p>25 кг - 100 кг</p>
+                                <p>6 часов</p>
+                                <p>1 встроенная</p>
+                                <p>Номинальная 250W</p>
+                                <p>42W (0.042kW) </p>
+                                <p>7%</p>
+                                <p>Передняя</p>
+                                <p>----</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-3.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter Air T15</h3>
+                                <p>20 км/ч</p>
+                                <p>12 км</p>
+                                <p>4000 mAh</p>
+                                <p>10.5 кг.</p>
+                                <p>30 кг - 100 кг</p>
+                                <p>4 часа</p>
+                                <p>1 встроенная</p>
+                                <p>Номинальная 300W</p>
+                                <p>71W (0.071kW)</p>
+                                <p>15%</p>
+                                <p>----</p>
+                                <p>Задний LED-фонарь</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-4.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter f30</h3>
+                                <p>25 км/ч</p>
+                                <p>30 км</p>
+                                <p>7650 mAh</p>
+                                <p>15.1 кг.</p>
+                                <p>30 кг - 120 кг</p>
+                                <p>5 часов</p>
+                                <p>1 встроенная</p>
+                                <p>Номинальная 300W</p>
+                                <p>71W (0.070kW)</p>
+                                <p>15%</p>
+                                <p>----</p>
+                                <p>Задний LED-фонарь</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-5.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter E22</h3>
+                                <p>30 км/ч</p>
+                                <p>45 км</p>
+                                <p>10200 mAh</p>
+                                <p>16.4 кг</p>
+                                <p>25 кг - 100 кг</p>
+                                <p>7.5 часа</p>
+                                <p>1 встроенная</p>
+                                <p>Номинальная 300W</p>
+                                <p>71W (0.070kW)</p>
+                                <p>20%</p>
+                                <p>----</p>
+                                <p>Задний LED-фонарь</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-6.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter ES1l</h3>
+                                <p>30 км/ч</p>
+                                <p>65 км</p>
+                                <p>551 wAh</p>
+                                <p>18.7 кг</p>
+                                <p>30 кг - 100 кг</p>
+                                <p>6 часов</p>
+                                <p>1 встроенная</p>
+                                <p>Номинальная 350W</p>
+                                <p>121W </p>
+                                <p>20%</p>
+                                <p>----</p>
+                                <p>Задний LED-фонарь</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-7.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter Air T15</h3>
+                                <p>30 км/ч</p>
+                                <p>40 км</p>
+                                <p>10200 mAh</p>
+                                <p>17.5 кг.</p>
+                                <p>30 кг - 100 кг</p>
+                                <p>6.5 часа</p>
+                                <p>1 встроенная</p>
+                                <p>Номинальная 350W
+                                    Максимальная 700W
+                                </p>
+                                <p>121W</p>
+                                <p>15%</p>
+                                <p>----</p>
+                                <p>Задний LED-фонарь</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-8.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter f30</h3>
+                                <p>25 км/ч</p>
+                                <p>25 км</p>
+                                <p>187 mAh</p>
+                                <p>12.5 кг.</p>
+                                <p>25 кг - 100 кг</p>
+                                <p>3.5 часов</p>
+                                <p>1 встроенная</p>
+                                <p>Номинальная 300W
+                                    Максимальная 700W
+                                </p>
+                                <p>71W</p>
+                                <p>10%</p>
+                                <p>----</p>
+                                <p>Задний LED-фонарь</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-9.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter Air T15</h3>
+                                <p>25 км/ч</p>
+                                <p>45 км</p>
+                                <p>374 mAh</p>
+                                <p>13.6 кг.</p>
+                                <p>25 кг - 100 кг</p>
+                                <p>7 часа</p>
+                                <p>2</p>
+                                <p>Номинальная 250W
+                                    Максимальная 600W
+                                </p>
+                                <p>71W</p>
+                                <p>15%</p>
+                                <p>----</p>
+                                <p>Cветодиодная фара,
+                                    боковые и задние
+                                    отражатели</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                            <div class="compare__item">
+                                <div><img src="img/compare-item-10.png" alt=""></div>
+                                <h3>NiNinebot
+                                    Kickscooter f30</h3>
+                                <p>30 км/ч</p>
+                                <p>45 км</p>
+                                <p>374 mAh</p>
+                                <p>14 кг.</p>
+                                <p>25 кг - 100 кг</p>
+                                <p>7 часов</p>
+                                <p>2</p>
+                                <p>Номинальная 300W
+                                    Максимальная 300W
+                                </p>
+                                <p>71W</p>
+                                <p>15%</p>
+                                <p>----</p>
+                                <p>Задний LED-фонарь</p>
+                                <p>----</p>
+                                <h4><span>$</span><span>599.99</span></h4>
+                                <a href="#" class="_button">BUY IT NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="segway">
+                <div class="container">
+                    <div class="segway__body">
+                        <div class="segway__image"><img src="img/segway-image.png" alt=""></div>
+                        <div class="segway__title">
+                            <h2 class="_title">Segway Protective
+                                Gear Set as a gift</h2>
+                            <p class="_par">The cost of a protection kit when buying
+                                a scooter is $ 0 instead of $ $29.99</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews" id="reviews">
+                <div class="container">
+                    <div class="reviews__body">
+                        <h2 class="_title">REviews</h2>
+                        <div class="reviews__items owl-carousel">
+                            <div class="reviews__item">
+                                <div><img src="img/reviews-1.png" alt=""></div>
+                            </div>
+                            <div class="reviews__item">
+                                <div><img src="img/reviews-1.png" alt=""></div>
+                            </div>
+                            <div class="reviews__item">
+                                <div><img src="img/reviews-1.png" alt=""></div>
+                            </div>
+                            <div class="reviews__item">
+                                <div><img src="img/reviews-1.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="control">
+                <div class="container">
+                    <div class="control__body">
+                        <div class="control__title">
+                            <h2 class="_title">Control from your smartphone</h2>
+                            <p class="_par">You can easily control your Segway electric scooter with your smartphone via
+                                Bluetooth. Not being the key to the kickscooter, it will give a signal in case of an
+                                attempt to steal. Check the current speed, data on the status of the device's systems or
+                                set the speed limit with a few touches.
+                                And the skating training program is indispensable for beginners.</p>
+                        </div>
+                        <div class="control__flex">
+                            <div class="control__block">
+                                <div class="control__block__items">
+                                    <div class="control__block__item">
+                                        <div><img src="img/control-item-1.svg" alt=""></div>
+                                        <p>Anti-theft
+                                            protection</p>
+                                    </div>
+                                    <div class="control__block__item">
+                                        <div><img src="img/control-item-2.svg" alt=""></div>
+                                        <p>Dashboard</p>
+                                    </div>
+                                    <div class="control__block__item">
+                                        <div><img src="img/control-item-3.svg" alt=""></div>
+                                        <p>Firmware
+                                            upgrade</p>
+                                    </div>
+                                    <div class="control__block__item">
+                                        <div><img src="img/control-item-4.svg" alt=""></div>
+                                        <p>Device
+                                            status</p>
+                                    </div>
+                                    <div class="control__block__item">
+                                        <div><img src="img/control-item-5.svg" alt=""></div>
+                                        <p>Settings and
+                                            restrictions</p>
+                                    </div>
+                                    <div class="control__block__item">
+                                        <div><img src="img/control-item-6.svg" alt=""></div>
+                                        <p>Training
+                                            program</p>
+                                    </div>
+                                </div>
+                                <div class="control__block__btns">
+                                    <a href="#"><img src="img/AppStore.svg" alt="AppStore"></a>
+                                    <a href="#"><img src="img/GooglePlay.svg" alt="GooglePlay"></a>
+                                </div>
+                            </div>
+                            <div class="control__image"><img src="img/control-image.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ninebot repeat" id="payment">
+                <div class="container">
+                    <div class="repeat__body">
+                        <div class="repeat__title">
+                            <h4>В наличии</h4>
+                            <h2>SEGWAY Ninebot Kickscooter MAX</h2>
+                            <div class="repeat__block block">
+                                <p>Add an extended warranty from <span>Extend</span></p>
+                                <div class="block__items">
+                                    <div class="block__item">1 Year - <span>$</span><span>139</span></div>
+                                    <div class="block__item">2 Year - <span>$</span><span>209</span></div>
+                                    <div class="block__item">3 Year - <span>$</span><span>279</span></div>
+                                </div>
+                                <div class="block__row">
+                                    <div class="block__price">
+                                        <del><span>$</span><span>1049.99</span></del>
+                                        <ins><span>$</span><span>949.99</span></ins>
+                                    </div>
+                                    <a href="#">Segway Protective Gear Set as a gift</a>
+                                    <div><img src="img/block-image.png" alt="armor"></div>
+                                </div>
+                                <div class="block__btns">
+                                    <a href="#" class=" _button">BUY IT Now</a>
+                                    <a href="#" class=" _button">ADD TO CART</a>
+                                </div>
+                            </div>
+                            <p>Payment Methods:</p>
+                            <div class="repeat__pay">
+                                <img src="img/header-pay-1.svg" alt="">
+                                <img src="img/header-pay-2.svg" alt="">
+                                <img src="img/header-pay-3.svg" alt="">
+                                <img src="img/header-pay-4.svg" alt="">
+                                <img src="img/header-pay-5.svg" alt="">
+                                <img src="img/header-pay-6.svg" alt="">
+                                <img src="img/header-pay-7.svg" alt="">
+                                <img src="img/header-pay-8.svg" alt="">
+                                <img src="img/header-pay-9.svg" alt="">
+                                <img src="img/header-pay-10.svg" alt="">
+                                <img src="img/header-pay-11.svg" alt="">
+                                <img src="img/header-pay-12.svg" alt="">
+                                <img src="img/header-pay-13.svg" alt="">
+                                <img src="img/header-pay-14.svg" alt="">
+                                <img src="img/header-pay-15.svg" alt="">
+                                <img src="img/header-pay-16.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="repeat__image">
+                            <img src="img/ninebot-image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="other">
+                <div class="container">
+                    <div class="other__body">
+                        <h2 class="_title">OTHER MODELS</h2>
+                        <p class="_par">Check out the entire line of Segway scooters</p>
+                        <div class="accessories__items">
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/compare-item-1.png" alt=""></div>
+                                <h3>KS E22</h3>
+                                <h4><span>$</span><span>899.99</span></h4>
+                                <a href="#" class="_button">SEE MORE</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/compare-item-2.png" alt=""></div>
+                                <h3>KS ES1l</h3>
+                                <h4><span>$</span><span>899.99</span></h4>
+                                <a href="#" class="_button">SEE MORE</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/compare-item-3.png" alt=""></div>
+                                <h3>KS Air t15</h3>
+                                <h4><span>$</span><span>899.99</span></h4>
+                                <a href="#" class="_button">SEE MORE</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/compare-item-4.png" alt=""></div>
+                                <h3>KS F30</h3>
+                                <h4><span>$</span><span>899.99</span></h4>
+                                <a href="#" class="_button">SEE MORE</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/compare-item-5.png" alt=""></div>
+                                <h3>KS E45</h3>
+                                <h4><span>$</span><span>899.99</span></h4>
+                                <a href="#" class="_button">SEE MORE</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/compare-item-6.png" alt=""></div>
+                                <h3>KS MAX</h3>
+                                <h4><span>$</span><span>899.99</span></h4>
+                                <a href="#" class="_button">SEE MORE</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <div class="item__image"><img src="img/compare-item-7.png" alt=""></div>
+                                <h3>MKS MAX</h3>
+                                <h4><span>$</span><span>899.99</span></h4>
+                                <a href="#" class="_button">SEE MORE</a>
+                            </div>
+                            <div class="accessories__item item">
+                                <h3>DIDN'T FIND
+                                    A MODEL?</h3>
+                                <p>Leave your contact details
+                                    and we will help you with
+                                    the choice</p>
+                                <form action="#" method="get">
+                                    <input type="tel" name="phone" placeholder="+38(___)-___-__-__">
+                                    <button type="submit" class="_button">SEND</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="contacts">
+            <div class="container">
+                <div class="footer__body">
+                    <a href="./" class="footer__logo"><img src="img/footer-logo.svg" alt=""></a>
+                    <div class="footer__menu">
+                        <a href="tel:+18887777777">+1 (888) 777-77-77</a>
+                        <p>2637 Fairfax Ave
+                            Culver City, CA 90232</p>
+                        <p>Segway California © 2017</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/load.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

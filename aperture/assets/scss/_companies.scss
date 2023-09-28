@@ -1,0 +1,25 @@
+.companies {
+    padding-top: 113px;
+    padding-bottom: 140px;
+    @media (max-width: 949px) {
+        padding: 60px 0;
+    }
+    h2 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 80px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        max-width: 1076px;
+        margin: 0 auto;
+        @media (max-width: 1133px) {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}

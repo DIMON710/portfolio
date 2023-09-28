@@ -1,0 +1,83 @@
+// out: ../css/style.css, compress: false, sourceMap: false
+*{padding:0;margin:0;border:0;scroll-behavior: smooth;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/* Обнуление */
+
+@import "mods.less";
+
+.page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.big-container {
+    max-width: 1366px;
+    width: 100%;
+    margin:  0 auto;
+    position: relative;
+}
+
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin:  0 auto;
+}
+.relative {
+    position: relative;
+}
+.team-container {
+    position: relative;
+    max-width: 860px;
+    width: 100%;
+}
+.footer-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    background-color: #5A98D0;
+    border-top-left-radius: 200px;
+    @media (max-width: 889px) {
+        border-top-left-radius: 150px;
+    }
+}
+.smole-wrapper {
+    position: absolute;
+    top: 0;
+    right: 96px;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    background-color: #316099;
+    border-top-right-radius: 200px;
+    @media (max-width: 889px) {
+        border-top-right-radius: 150px;
+    }
+    @media (max-width: 580px) {
+        right: 3%;
+    }
+}
+
+@import "_header.less";
+@import "_weDo.less";
+@import "_project.less";
+@import "_client.less";
+@import "_team.less";
+@import "_footer.less";

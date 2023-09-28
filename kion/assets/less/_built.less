@@ -1,0 +1,27 @@
+// main: main.less
+.built {
+    padding-top: 145px;
+    padding-bottom: 150px;
+    &__body {
+        h2 {
+            text-align: center;
+            color: #283337;
+            font-size: 58px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            line-height: 60px;
+            padding-bottom: 85px;
+        }
+    }
+    &__partners {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 970px;
+        margin: 0 auto;
+        gap: 15px;
+        @media (max-width:527px) {
+            justify-content: space-around;
+        }
+    }
+}

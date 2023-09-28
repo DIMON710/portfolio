@@ -1,0 +1,30 @@
+// main: main.less
+._btn-bas {
+    background: #002547 url(../../base/assets/img/header-ph.png) no-repeat;
+    background-size: 300px;
+    background-position: center center;
+    flex-basis: 625px;
+    border-bottom-left-radius: 10px;
+
+    @media (max-width: 734px) {
+        flex-basis: 300px;
+    }
+
+
+    &::after {
+        content: 'Base';
+        color: #fff;
+    }
+
+    &::before {
+        background-color: #081161;
+    }
+}
+
+.bg-bas {
+    flex-basis: 625px;
+    border-top-right-radius: 10px;
+    @media (max-width: 734px) {
+        flex-basis: 300px;
+    }
+}

@@ -1,0 +1,43 @@
+.monstera {
+    background: url(../img/monstera-bg.png) no-repeat center center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    &__body {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__title {
+        max-width: 273px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(300px);
+            transition: 1.5s all ease;
+        }
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--text-grey);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(300px);
+            transition: 1.5s all ease;
+        }
+    }
+    .feature { 
+        right: 20px;
+    }
+}

@@ -1,0 +1,34 @@
+// main: main.less
+.bg-kio {
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    @media (max-width: 1059px) {
+        border-bottom-right-radius: 10px;
+    }
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+}
+
+.btn-kio {
+    background: #F3F7F4 url(../img/Kion.png) no-repeat;
+    background-size: cover;
+    @media (max-width: 1059px) {
+        border-bottom-right-radius: 10px;
+    }
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+    &::after {
+        content: 'Kion';
+        color: #fff;
+    }
+
+    &::before {
+        background-color: rgb(20, 20, 20);
+    }
+
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    background-position: center -15px;
+}

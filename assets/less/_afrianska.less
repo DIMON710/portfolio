@@ -1,0 +1,40 @@
+// main: main.less
+._btn-afr {
+    background: #98c3e8 url(../../afrianska/assets/img/headerImg.svg) no-repeat;
+    background-size: 380px;
+    background-position: top center;
+    flex-basis: 625px;
+    border-bottom-left-radius: 10px;
+
+    @media (max-width: 734px) {
+        flex-basis: 300px;
+    }
+
+    @media (max-width: 600px) {
+        background-size: 900px;
+        background-position: right top;
+    }
+
+    @media (max-width: 540px) {
+        background-size: 900px;
+        background-position: -470px top;
+    }
+
+    &::after {
+        content: 'Arfianska';
+        color: #fff;
+    }
+
+    &::before {
+        background-color: #2e8adb;
+    }
+}
+
+.bg-afr {
+    flex-basis: 625px;
+    border-bottom-left-radius: 10px;
+
+    @media (max-width: 734px) {
+        flex-basis: 300px;
+    }
+}

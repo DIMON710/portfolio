@@ -1,0 +1,22 @@
+// main: main.less
+.btn-tic {
+    background: #ccc url(../img/tictactoe.png) no-repeat center center;
+    background-size: contain;
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+    &::after {
+        content: 'Крестики - Нолики';
+        color: #fff;
+    }
+
+    &::before {
+        background-color: rgba(56, 56, 56, 0.753);
+    }
+}
+.bg-tic {
+    border-radius: 17px;
+    @media (max-width: 734px) {
+        flex-basis: 300px; 
+    }
+}

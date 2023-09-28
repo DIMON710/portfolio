@@ -1,0 +1,70 @@
+// main: main.less
+.footer {
+
+    &__body {
+        color: #fff;
+        font-family: 'Gilroy Regular';
+        font-size: 16px;
+        display: flex;
+        max-width: 737px;
+        gap: 30px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 95px;
+        margin-bottom: 73px;
+        a {
+            color: #fff; 
+            max-width: 223px;
+            letter-spacing: 0.8px;
+        }
+    }
+    &__title {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        margin-bottom: 8px;
+        h2 {
+            font-family: 'Gilroy Semibold';
+            font-size: 28px;
+            line-height: 46px;
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (max-width: 652px) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: 425px) {
+            padding-left: 20px;
+        }
+    }
+    &__about {
+        display: flex;
+        gap: 77px;
+        @media (max-width: 425px) {
+            margin: 0 auto;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            li:first-child {
+                font-family: 'Gilroy Semibold';
+                font-size: 20px;
+                padding-bottom: 18px;
+            }
+        }
+    }
+}
+
+.lorem, .telephone, .email {
+    display: flex;
+    gap: 20px;
+}
+
+.end {
+    color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 70px;
+}

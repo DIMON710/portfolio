@@ -1,0 +1,88 @@
+// main: main.less
+.touch {
+    &__content {
+        display: flex;
+        justify-content: center;
+        gap: 40px 140px;
+        @media (max-width: 550px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 50px 0;
+        padding-top: 20px;
+        span {
+            display: block;
+        }
+        a {
+            color: #888;
+            font-family: 'Myriad Pro Regular';
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+    &__mail-tel {
+        display: flex;
+        flex-direction: column;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &__icon {
+        background-color: #ff817e;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form {
+        flex-basis: 555px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+        input {
+        border: 1px solid #e3e6ea;
+        max-width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        color: #999;
+        font-family: 'Roboto Light', sans-serif;
+        font-size: 12px;
+        line-height: 50px;
+        &:last-of-type {
+            height: 150px;
+            padding-bottom: 80px;
+        }
+        &::placeholder {
+            color: #999;
+            text-transform: uppercase;
+            font-family: 'Roboto Light', sans-serif;
+            font-size: 12px;
+            line-height: 50px;
+        }
+        }
+        
+    }
+    &__title {
+        padding-top: 140px;
+        @media (max-width: 1020px) {
+            padding-top: 50px;
+        }
+    }
+}
+.btn-touch {
+    margin: 10px 0 140px;
+    display: block;
+}

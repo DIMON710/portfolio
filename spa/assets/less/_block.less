@@ -1,0 +1,71 @@
+// main: main.less
+.block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5px;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        position: relative;
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+            margin-bottom: 0;
+            flex-basis: 48%;
+        }
+        &:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        &:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+        &::before {
+            content: "Body Treatment";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-family: "Rufina Bold";
+            font-size: 22px;
+            line-height: 27px;
+            background-color: rgba(255, 129, 126, 0.9);
+            padding-top: 65%;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s all ease-in-out;
+            @media (max-width: 500px) {
+                padding-top: 70%;
+            }
+        }
+        &::after {
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: url(../img/block-hover.svg) no-repeat center 48%;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s all ease-in-out;
+            @media (max-width: 500px) {
+                background-position: center 40%;
+            }
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

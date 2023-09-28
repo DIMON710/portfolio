@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'FuturaPT Extra-Bold';
+    src: url('fonts/FuturaPTExtraBoldOblique.eot');
+    src: url('fonts/FuturaPTExtraBoldOblique.eot') format('embedded-opentype'),
+         url('fonts/FuturaPTExtraBoldOblique.woff2') format('woff2'),
+         url('fonts/FuturaPTExtraBoldOblique.woff') format('woff'),
+         url('fonts/FuturaPTExtraBoldOblique.ttf') format('truetype'),
+         url('fonts/FuturaPTExtraBoldOblique.svg#FuturaPTExtraBoldOblique') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaPT Medium';
+    src: url('fonts/FuturaPTMediumOblique.eot');
+    src: url('fonts/FuturaPTMediumOblique.eot') format('embedded-opentype'),
+         url('fonts/FuturaPTMediumOblique.woff2') format('woff2'),
+         url('fonts/FuturaPTMediumOblique.woff') format('woff'),
+         url('fonts/FuturaPTMediumOblique.ttf') format('truetype'),
+         url('fonts/FuturaPTMediumOblique.svg#FuturaPTMediumOblique') format('svg');
+}

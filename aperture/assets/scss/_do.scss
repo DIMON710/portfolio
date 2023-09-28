@@ -1,0 +1,76 @@
+.do {
+    &__body {
+        padding-top: 120px;
+        padding-bottom: 100px;
+        @media (max-width: 949px) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px 10px;
+        margin-top: 42px;
+        @media (max-width: 1211px) {
+            justify-content: space-around;
+        }
+    }
+    &__item {
+        max-width: 576px;
+        width: 100%;
+        @media (max-width: 1211px) {
+            max-width: 100%;
+        }
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 30px;
+        transition: 0.3s all ease-in-out;
+        h3 {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+        }
+        &>p {
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--text-grey);
+            padding-bottom: 15px;
+        }
+        a {
+            font-size: 15px;
+            max-width: 143px;
+            padding-left: 5px;
+            padding-right: 10px;
+            justify-content: space-between;
+            p {
+                color: var(--text-second-color);
+                padding-bottom: 5px;
+            }
+        }
+        &:nth-child(1) {
+            background: url(../img/do-img1.png) no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(../img/do-img2.png) no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url(../img/do-img3.png) no-repeat center center;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background: url(../img/do-img4.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}

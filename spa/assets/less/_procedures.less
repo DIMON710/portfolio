@@ -1,0 +1,125 @@
+// main: main.less
+
+.procedures {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+
+        @media (max-width: 1130px) {
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-around;
+        }
+    }
+
+    &__item {
+        max-width: 360px;
+        max-height: 583px;
+        border: 1px solid #e3e6ea;
+        text-align: center;
+        transition: 0.3s all ease-in-out;
+        padding: 0 15px 60px;
+        @media (max-width: 1130px) {
+            max-width: none;
+            flex-basis: 49%;
+        }
+        @media (max-width: 650px) {
+            flex-basis: 100%;
+        }
+        @media (max-width: 530px) {
+            flex-grow: 1;
+        }
+        &:last-of-type {
+            @media (max-width: 1130px) {
+                flex-grow: 1;
+            }
+        }
+
+        img {
+            padding: 20px;
+            padding-bottom: 35px;
+            max-width: 100%;
+        }
+
+        h2 {
+            color: #263a41;
+            font-family: 'Rufina Bold', sans-serif;
+            font-size: 22px;
+            line-height: 27px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            color: #888;
+            font-family: 'Roboto Light', sans-serif;
+            font-size: 14px;
+            line-height: 27px;
+            max-width: 280px;
+            margin: 0 auto;
+            padding: 0 0 38px 0;
+        }
+
+        &:hover {
+            border-color: transparent;
+            box-shadow: 0px 15px 40px 0px rgba(4, 10, 50, 0.1);
+        }
+    }
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 85px;
+
+    h2 {
+        color: #263a41;
+        font-family: 'Rufina Bold', sans-serif;
+        font-size: 42px;
+        line-height: 27px;
+        padding-top: 100px;
+        padding-bottom: 35px;
+        @media (max-width: 425px) {
+            line-height: 50px;
+        }
+    }
+
+    p {
+        color: #888;
+        font-family: 'Roboto Light', sans-serif;
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.s-button {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 13px;
+    line-height: 44px;
+    display: block;
+    margin: 0 auto;
+    max-width: 140px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #30383b;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+        background-color: #ff817e;
+    }
+}
+
+._pro-title {
+    padding-bottom: 85px;
+
+    h2 {
+        padding-bottom: 35px;
+        
+    }
+}

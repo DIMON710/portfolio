@@ -1,0 +1,23 @@
+// main: main.less
+.btn-ape {
+    background: #ccc url(../../aperture/assets/img/gear-img.png) no-repeat
+        center center;
+    background-size: cover;
+    @media (max-width: 734px) {
+        flex-basis: 300px;
+    }
+    &::after {
+        content: "Aperture";
+        color: #fff;
+    }
+
+    &::before {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+.bg-ape {
+    border-radius: 17px;
+    @media (max-width: 734px) {
+        flex-basis: 300px;
+    }
+}

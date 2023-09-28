@@ -1,0 +1,84 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--nav-color);
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 4px 0 16px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 680px;
+        width: 100%;
+        min-height: 90px;
+        .navbar__btn {
+            transition: 0.3s all ease-in-out;
+            @media (max-width: 949px) {
+                position: absolute;
+                top: -100%;
+                right: 80px;
+                z-index: 15;
+                transform: translateY(0%);
+                &.active {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            @media (max-width: 449px) {
+                &.active {
+                    top: 120px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        @media (max-width: 949px) {
+            justify-content: flex-end;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 494px;
+        width: 100%;
+        transition: 0.3s all ease-in-out;
+        li a {
+            font-size: 13px;
+            color: var(--text-color);
+            transition: 0.2s all linear;
+            &:hover {
+                color: var(--text-grey);
+                text-shadow: 6px 5px 14px #000000;
+            }
+        }
+        @media (max-width: 949px) {
+            max-width: 320px;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            position: absolute;
+            top: -250%;
+            right: 0;
+            z-index: 11;
+            li a {
+                font-size: 28px;
+            }
+            &.active {
+                top: 150px;
+            }
+        }
+        @media (max-width: 449px) {
+            &.active {
+                top: 180px;
+            }
+        }
+    }
+    &__logo {
+        z-index: 15;
+    }
+}

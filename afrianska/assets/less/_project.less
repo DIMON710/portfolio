@@ -1,0 +1,85 @@
+// main: main.less
+
+.project {
+    padding-top: 90px;
+    &__body {
+        margin-bottom: 192px;
+        @media (max-width: 889px) {
+            margin-bottom: 120px;
+        }
+    }
+    &__title {
+        display: flex;
+        gap: 93px;
+        padding-bottom: 100px;
+        @media (max-width: 889px) {
+            padding-bottom: 60px;
+        }
+        @media (max-width: 600px) {
+           flex-direction: column;
+           gap: 20px;
+        }
+        h2 {
+            color: #1F3F68;
+        }
+        p {
+            padding-top: 2px;
+            color: rgba(31, 63, 104, 0.6);
+            font-family: 'Gilroy Regular';
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.8px;
+            max-width: 540px;
+        }
+    }
+    &__smole-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media (max-width: 894px) {
+            justify-content: center; 
+        }
+    }
+    &__big-item {
+        position: relative;
+        width: 100%;
+        height: 417px;
+        border-radius: 10px;
+        background: url(../img/big-item-img.png) no-repeat center center;
+        padding: 50px;
+        margin-bottom: 96px;
+        @media (max-width:894px) {
+            margin-bottom: 20px;
+        }
+        img {
+            position: absolute;
+            max-width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+        h3 {
+            text-align: end;
+        }
+        p {
+            text-align: end;
+            opacity: 0.8;
+        }
+    }
+    &__item1 {
+        max-width: 422px;
+        width: 100%;
+        height: 417px;
+        border-radius: 10px;
+        background: url(../img/project-item1.png) no-repeat center center;
+        padding: 32px;
+    }
+    &__item2 {
+        max-width: 422px;
+        width: 100%;
+        height: 417px;
+        border-radius: 10px;
+        background: url(../img/project-item2.png) no-repeat center center;
+        padding: 32px;
+    }
+}

@@ -1,0 +1,133 @@
+// main: main.less
+
+.previou__body {
+
+    h1 {
+        text-transform: uppercase;
+        color: #ff817e;
+        font-family: 'Rufina Regular', sans-serif;
+        font-size: 15px;
+        line-height: 72px;
+        margin-top: 165px;
+        @media (max-width: 750px) {
+            margin-top: 50px;
+         }
+    }
+
+    h2 {
+        color: #1e2528;
+        font-family: 'Rufina Bold', sans-serif;
+        font-size: 60px;
+        line-height: 75px;
+        @media (max-width: 570px) {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        span {
+            display: block;
+        }
+    }
+
+    p {
+        color: #555;
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 15px;
+        line-height: 27px;
+        margin-bottom: 50px;
+        span {
+            display: block;
+        }
+    }
+}
+
+.previou {
+    position: relative;
+    &__bg {
+        position: absolute;
+        left: 304px;
+        top: 635px;
+        @media (max-width: 1400px) {
+            left: 50px;
+         }
+         @media (max-width: 1180px) {
+            display: none;
+        }
+    }
+    &__body {
+        @media (max-width: 1180px) {
+            text-align: center;
+    }
+        
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 170px;
+        height: 50px;
+        background-color: #ff817e;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            background-color: #af6f6e;
+        }
+        p {
+            font-family: 'Roboto Medium', sans-serif;
+            font-size: 13px;
+            line-height: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        div {
+            align-self: center;
+            color: #fff;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: flex-end;
+        gap: 30px 55px;
+        @media (max-width: 1180px) {
+            justify-content: center;
+        }
+        @media (max-width: 420px) {
+            flex-wrap: wrap;
+        }
+    }
+    
+    &__play {
+            background-color: #fcf5ee ;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: block;
+            width: 44px;
+            height: 44px;
+            position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+    }
+
+    &__video {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        a {
+           color: #555; 
+           font-family: 'Roboto Regular', sans-serif;
+           font-size: 15px;
+        }
+    }
+}
+
+    // font-family: 'Roboto Light';
+    // font-family: 'Roboto Regular';
+    // font-family: 'Roboto Medium';
+    // font-family: 'Rufina Regular';
+    // font-family: 'Rufina Bold';

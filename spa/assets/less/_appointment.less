@@ -1,0 +1,111 @@
+// main: main.less
+.appointment {
+    background-color: #fff9f8;
+    margin-top: 285px;
+    margin-bottom: 150px;
+    @media (max-width: 710px) {
+        background-color: transparent;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    img {
+        width: 40.52%;
+        height: 100%;
+    }
+
+    &__body {
+        background: url(../img/appointman.png) no-repeat;
+        @media (max-width: 1470px) {
+            background: url(../img/appointman-adapt.png) no-repeat center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 850px;
+        @media (max-width: 1540px) {
+            margin-left: 780px;
+            justify-content: center;
+        }
+        @media (max-width: 1470px) {
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+
+    &__form {
+        padding: 110px 0 130px;
+    }
+    &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 20px;
+        max-width: 660px;
+        input:last-child {
+            margin-top: 53px;
+        }
+
+        input,
+        select {
+            flex-grow: 1;
+            flex-basis: 320px;
+            background: transparent;
+            border-bottom: 1px solid #999;
+            color: #999;
+            font-family: "Roboto Regular", sans-serif;
+            font-size: 12px;
+            height: 50px;
+            line-height: 50px;
+            @media (max-width: 1470px) {
+                border-color: #fff;
+                color: #fff;
+            }
+            &::placeholder {
+                color: #999;
+                font-family: "Roboto Regular", sans-serif;
+                font-size: 12px;
+                line-height: 50px;
+                @media (max-width: 1470px) {
+                    color: #fff;
+                }
+            }
+        }
+        select {
+            background: transparent url(../img/angle-down-g.svg) no-repeat
+                center right;
+            background-size: 16px 16px;
+            appearance: none;
+            cursor: pointer;
+            @media (max-width: 1470px) {
+                background-image: url(../img/angle-down-w.svg);
+            }
+        }
+    }
+    .date {
+        background: transparent url(../img/calendar-g.svg) no-repeat center
+            right;
+        background-size: 16px 16px;
+        cursor: text;
+        @media (max-width: 1470px) {
+            background-image: url(../img/calendar-w.svg);
+        }
+    }
+    .time {
+        background: transparent url(../img/time-g.svg) no-repeat center right;
+        background-size: 16px 16px;
+        cursor: text;
+        @media (max-width: 1470px) {
+            background-image: url(../img/time-w.svg);
+        }
+    }
+}
+
+.appointment_btn {
+    width: 200px;
+    font-size: 14px;
+    line-height: 51px;
+    text-transform: none;
+    margin: 40px 0 0;
+}

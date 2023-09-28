@@ -1,0 +1,46 @@
+.free {
+    padding-top: 127px;
+    @include adaptiv('padding-top', 127, 70, 1);
+    &__body {
+        @include adaptiv('padding-top', 60, 30, 1);
+        @include adaptiv('padding-bottom', 60, 30, 1);
+        background-color: #3ca9ff;
+        border-radius: 20px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 60px;
+        h2 {
+            font-size: 57px;
+            line-height: 64px;
+            @include adaptiv('font-size', 57, 35, 1);
+            @include adaptiv('line-height', 64, 42, 1);
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            padding: 20px;
+            span {
+                display: block;
+            }
+        }
+        a {
+            max-width: 153px;
+            width: 100%;
+            height: 51px;
+            margin: 0 auto;
+            background-color: #0e1016;
+            font-size: 18px;
+        }
+    }
+    &__mark {
+        padding-top: 35px;
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 15px;
+            li {
+                display: flex;
+                gap: 7px;
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.navbar {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        margin: 35px 0;
+        margin-right: 135px;
+        @media (max-width: 1300px) {
+            margin-right: 0;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        transition: 0.3s all ease-in-out;
+        @media (max-width: 1300px) {
+            position: absolute;
+            top: 130px;
+            right: -100%;
+            z-index: 2;
+            flex-direction: column;
+        }
+        li {
+            @media (max-width: 1300px) {
+                &:nth-child(2) a {
+                    padding-left: 40px;
+                }
+            }
+            a {
+                font-size: 20px;
+                color: #141414;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                @media (max-width: 1300px) {
+                    color: #fff;
+                    font-size: 40px;
+                }
+            }
+        }
+        &.active {
+            right: 25px;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        transition: 0.3s all ease-in-out;
+        @media (max-width: 1300px) {
+            position: absolute;
+            top: 20px;
+            right: -100%;
+            z-index: 2;
+            .start-btn {
+                width: 130px;
+            }
+            .navbar__login-btn {
+                width: 80px;
+                color: #fff;
+            }
+        }
+        &.active {
+            right: 80px;
+        }
+    }
+    &__login-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94px;
+        height: 54px;
+        border: 2px solid #f8f4f4;
+        color: #333;
+        text-align: center;
+        border-radius: 8px;
+    }
+}
